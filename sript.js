@@ -1,14 +1,9 @@
-// Armando una ensalada //
-let ensalada = "";
-let ingredientes;
+let fechaNac = parseFloat(prompt("Ingresa tu año de nacimiento"))
 
-do {
-    ingredientes = prompt("Qué sabores te gustaría en tu ensalada? Escribe 3 ingredientes y acepta. Escribe ESC para terminar.");
-    if (ensalada != "ESC") {
-        ensalada = ensalada + ingredientes + "\n";
-    }
-} while (ingredientes != "ESC");
-
-console.log("Tu ensalada contiene:");
-console.log(ensalada);
-
+if(fechaNac <= 2003) { 
+    console.log("Sos mayor de 18, podés ingresar")
+} else if(fechaNac ==2004 ) {
+    console.log("Si naciste antes de Junio, sos mayor de 18, podés ingresar")
+} else {
+    console.log("Sos menor de 18, no podés ingresar")
+}
